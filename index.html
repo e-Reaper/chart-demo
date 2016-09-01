@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		DEMO | ABHISHEK | CHARTS
+	</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<script src="basic.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="input-form">
+			<div class="data-input-group">
+				<div class="addmore" id="showGraph">
+					<button>SHOW GRAPH</button>
+				</div>
+				<div class="addmore" id="addmore">
+					<button>ADD SALARY</button>
+				</div>
+			</div>
+			<div id="inputContainer">
+				
+			</div>
+			<div class="data-input-group">
+				<div class="addmore" id="resetData">
+					<button>RESET</button>
+				</div>
+			</div>			
+		</div>
+		<div class="space" id="space">
+			
+		</div>
+		<div class="visual" id="graphSpace">
+			<div class="graph" id="graph">		
+			</div>
+			<hr/>
+			<div class="graph" id="bar">		
+			</div>
+			<hr/>
+			<div class="graph" id="pie">		
+			</div>
+			<hr/>
+			<canvas id="myCanvas" width="500" height="400"
+			style="border:0px solid #000000;">
+			</canvas>
+			
+		</div>
+		
+	</div>
+	<template id="template">
+		<div class="data-input-group">
+			<fieldset>
+				<legend>FOR JULY</legend>
+				<input type="number" class="data-x" name="" placeholder="salary">
+				<input type="number" class="data-y" name="" placeholder="savings">
+			</fieldset>
+		</div>
+	</template>
+
+</body>
+</html>
